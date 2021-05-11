@@ -5,7 +5,7 @@ Creare un array di oggetti, ogni oggetto descriverà una bici da corsa con le se
 - peso.
 Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
 */
-
+/*
 const biciCorsa = [
     
     {
@@ -75,8 +75,8 @@ const {nome, peso} = biciCorsa;
 // console.log(`la bici ${lightest.nome} pesa ${lightest.peso} kg, quindi è la bici più leggera sul mercato`);
 document.getElementById("print").innerHTML = `la bici ${lightest.nome} pesa ${lightest.peso} kg, quindi è la bici più leggera sul mercato`;
 
+*/
 
-// document.getElementById('print').innerHTML = lightest;
 /*
 Snack2:
 Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà:
@@ -87,3 +87,54 @@ Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0
 Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti.
 Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 */
+
+let soccerTeam = [
+    
+    {
+        teamName: 'Malaga C.F.' ,
+        points: 0,
+        fails: 0,
+    },
+
+    {
+        teamName: 'Real Madrid C.F.' ,
+        points: 0,
+        fails: 0,
+    },
+
+    {
+        teamName: 'Barcelona C.F.' ,
+        points: 0,
+        fails: 0,
+    },
+
+    {
+        teamName: 'Inter di Milano' ,
+        points: 0,
+        fails: 0,
+    },
+
+    {
+        teamName: 'Arsenal' ,
+        points: 0,
+        fails: 0,
+    },
+]
+
+// let addPoints = [];
+// let addFails =[];
+// function getRandomPoint() {
+//     return Math.floor(Math.random() *21);
+//     // addPoints.push(getRandomPoint);
+   
+//   }
+//  console.log( getRandomPoint);
+
+// //   getRandomPoint(0, 20);
+// //   console.log(addPoints);
+soccerTeam.points = Math.floor(Math.random() * 21);
+console.log(soccerTeam.points);
+
+soccerTeam.fails = Math.floor(Math.random() * 21);
+console.log(soccerTeam.fails);
+
