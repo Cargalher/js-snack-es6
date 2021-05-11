@@ -72,6 +72,9 @@ const {nome, peso} = biciCorsa;
 console.log(lightest.nome, lightest.peso);
 
 
+console.log(`la bici ${lightest.nome} pesa ${lightest.peso} kg, quindi è la bici più leggera sul mercato`);
+
+
 // document.getElementById('print').innerHTML = lightest;
 /*
 Snack2:
