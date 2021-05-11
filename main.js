@@ -6,7 +6,69 @@ peso.
 Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
 */
 
+var biciCorsa = [
+    
+   bici1 = {
+       nome: "Cimino",
+       peso: 9.0,
+        
 
+    },
+    bici1 = {
+        nome: "Bianchi",
+        peso: 5.4,
+       
+
+    },
+    bici1 = {
+        nome: "Olmo",
+        peso: 7.0,
+       
+
+    },
+    bici1= {
+        nome: "Orbea",
+        peso: 4.5,
+       
+    },
+    bici1 = {
+        nome: "Cannondale",
+        peso: 8.0,
+       
+
+    },
+    bici1 = {
+        nome: "Giant",
+        peso: 5.7,
+       
+
+    },
+    bici1= {
+        nome: "Trek",
+        peso: 4.6,
+
+    },
+    bici1 = {
+        nome: "Scott",
+        peso: 6.2,
+      
+
+    },
+    bici1= {
+        nome: "Canyon",
+        peso: 8.4,
+        
+
+    },
+    bici1 = {
+        nome: "BMC",
+        peso: 7.7,
+       
+
+    },
+
+]
+ 
 
 
 /*
