@@ -146,3 +146,11 @@ let soccerTeam = [
 //     return Math.floor(Math.random() * 21);
 //     soccerTeam.fails.push(getRandomFails);
 // }
+let soccerTeam2 = [
+    {
+    teamName : soccerTeam.teamName,
+    fails : soccerTeam.fails,
+    }
+]
+
+    console.log(soccerTeam2);
