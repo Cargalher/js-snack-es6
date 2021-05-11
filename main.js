@@ -147,7 +147,12 @@ for(let i=0; i< soccerTeam.length;i++){
             teamName: soccerTeam[i].teamName,
             fail: soccerTeam[i].fails,
         })
-    console.log(soccerTeam2);
+    
 }
-   let [teamName, fail] = soccerTeam2;
-   console.log(teamName, fail);
+console.log(soccerTeam2);
+ 
+// let [teamName, fails] = soccerTeam2;
+// console.log(teamName);
+// console.log(fails);
+let [{teamName,fails}] = soccerTeam2;
+console.log(teamName,fails);
