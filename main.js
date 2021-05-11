@@ -125,33 +125,26 @@ let soccerTeam = [
 
 
 
-// get random number and push it inside of the points property
+// get random number and push it inside of the points property and fails property
 for(let i=0; i< soccerTeam.length;i++){
+    
     soccerTeam[i].points = Math.floor(Math.random() * 21);
     console.log(soccerTeam[i].points);
     soccerTeam[i].fails = Math.floor(Math.random() * 21);
     console.log(soccerTeam[i].fails);
 
 }
-    
-
-// function getRandomPoint (){
-//     return Math.floor(Math.random() * 21);
-//     soccerTeam.points.push(getRandomPoint);
-// }
-
-
-
-// get random number and push it inside of the fails property
-
    
 console.log(soccerTeam);
 
+
+// new array created to insert team Name and fails
 let soccerTeam2 = []
+
 for(let i=0; i< soccerTeam.length;i++){
-    soccerTeam[i].teamName;
-    console.log(soccerTeam[i].teamName);
-    soccerTeam[i].fails;
-    console.log(soccerTeam[i].fails);
+
+    soccerTeam2.push(soccerTeam[i].teamName);
+    soccerTeam2.push(soccerTeam[i].fails);
+    console.log(soccerTeam2);
 }
    
