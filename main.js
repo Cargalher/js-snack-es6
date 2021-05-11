@@ -126,9 +126,14 @@ let soccerTeam = [
 
 
 // get random number and push it inside of the points property
+for(let i=0; i< soccerTeam.length;i++){
+    soccerTeam[i].points = Math.floor(Math.random() * 21);
+    console.log(soccerTeam[i].points);
+    soccerTeam[i].fails = Math.floor(Math.random() * 21);
+    console.log(soccerTeam[i].fails);
 
-    soccerTeam.points = Math.floor(Math.random() * 21);
-    console.log(soccerTeam.points);
+}
+    
 
 // function getRandomPoint (){
 //     return Math.floor(Math.random() * 21);
@@ -139,18 +144,14 @@ let soccerTeam = [
 
 // get random number and push it inside of the fails property
 
-    soccerTeam.fails = Math.floor(Math.random() * 21);
-    console.log(soccerTeam.fails);
+   
+console.log(soccerTeam);
 
-// function getRandomFails (){
-//     return Math.floor(Math.random() * 21);
-//     soccerTeam.fails.push(getRandomFails);
-// }
-let soccerTeam2 = [
-    {
-    teamName : soccerTeam.teamName,
-    fails : soccerTeam.fails,
-    }
-]
-
-    console.log(soccerTeam2);
+let soccerTeam2 = []
+for(let i=0; i< soccerTeam.length;i++){
+    soccerTeam[i].teamName;
+    console.log(soccerTeam[i].teamName);
+    soccerTeam[i].fails;
+    console.log(soccerTeam[i].fails);
+}
+   
