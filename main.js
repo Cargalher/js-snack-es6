@@ -120,21 +120,29 @@ let soccerTeam = [
         fails: 0,
     },
 ]
+    console.log(soccerTeam);
 
-// let addPoints = [];
-// let addFails =[];
-// function getRandomPoint() {
-//     return Math.floor(Math.random() *21);
-//     // addPoints.push(getRandomPoint);
-   
-//   }
-//  console.log( getRandomPoint);
 
-// //   getRandomPoint(0, 20);
-// //   console.log(addPoints);
-soccerTeam.points = Math.floor(Math.random() * 21);
-console.log(soccerTeam.points);
 
-soccerTeam.fails = Math.floor(Math.random() * 21);
-console.log(soccerTeam.fails);
 
+// get random number and push it inside of the points property
+
+    soccerTeam.points = Math.floor(Math.random() * 21);
+    console.log(soccerTeam.points);
+
+// function getRandomPoint (){
+//     return Math.floor(Math.random() * 21);
+//     soccerTeam.points.push(getRandomPoint);
+// }
+
+
+
+// get random number and push it inside of the fails property
+
+    soccerTeam.fails = Math.floor(Math.random() * 21);
+    console.log(soccerTeam.fails);
+
+// function getRandomFails (){
+//     return Math.floor(Math.random() * 21);
+//     soccerTeam.fails.push(getRandomFails);
+// }
