@@ -6,7 +6,7 @@ Creare un array di oggetti, ogni oggetto descriverà una bici da corsa con le se
 Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
 */
 
-let biciCorsa = [
+const biciCorsa = [
     
     {
        nome: "Cimino",
@@ -61,10 +61,18 @@ let biciCorsa = [
 ]
  
 
-let lightest = biciCorsa.reduce(function(lightest, bici){
+const lightest = biciCorsa.reduce(function(lightest, bici){               
     return bici.peso<lightest.peso ? bici : lightest;
 },biciCorsa[0]);
+
 console.log(lightest);
+
+
+const {nome, peso} = biciCorsa;
+console.log(lightest.nome, lightest.peso);
+
+
+// document.getElementById('print').innerHTML = lightest;
 /*
 Snack2:
 Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà:
