@@ -212,7 +212,7 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
 
         // console.log(movie);
         if(i>=min && i <=max ){
-            newArray.push(movie[i])
+            newArray.push(movie)
         }
        
      
