@@ -202,7 +202,7 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
 
 
 
-    const movies = ['Cinema Paradiso', ' Gladiator', 'Titanic', 'Rocky', ' To Kill a Mockingbird ', 'Rain Man', ' Pulp Fiction', 'Boyhood']
+    const movies = ['Cinema Paradiso', ' Gladiator', 'Titanic', 'Rocky', ' Psycho ', 'Vertigo', ' Pulp Fiction', 'Boyhood']
     const min = 1
     const max =5
     const newArray =[];
@@ -215,7 +215,7 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
             newArray.push(movie[i])
         }
        
-        return newArray;
+     
        
     });
      console.log(newArray);
