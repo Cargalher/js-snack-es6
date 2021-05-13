@@ -107,7 +107,7 @@ Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0
 Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti.
 Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 */
-
+/*
 let soccerTeam = [
     
     {
@@ -146,7 +146,7 @@ let soccerTeam = [
 
 
 // get random number and push it inside of the points property and fails property
-/*
+
 for(let i=0; i< soccerTeam.length;i++){
 
     soccerTeam[i].points = Math.floor(Math.random() * 21);
@@ -225,7 +225,6 @@ console.log(teams);
 La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.*/
 
 
-/*
 
     const movies = ['Cinema Paradiso', ' Gladiator', 'Titanic', 'Rocky', ' Psycho ', 'Vertigo', ' Pulp Fiction', 'Boyhood']
     const min = 1
@@ -240,10 +239,38 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
             newArray.push(movie)
         }
        
-     
-       
     });
+
      console.log(newArray);
    
 
-     */
+
+
+
+
+////////////////////////FABIO'S WAY (using filter)
+
+/**
+ * #GetRangeOfValues
+ * ci restituisce una porzione dell'array compresa tra i valori di
+ * minimo e massimo
+ * @param{array} list- un array di elementi da filtrare
+ * @param{number} min- valore minimo di elementi
+ * @param{number} max - valore massimo di elementi
+ * 
+ * @returns {array} - porzione dell'array
+ */
+/*
+const getRangeOfValues = (list, min, max) => {
+    const newArray = list.filter((element,index)=>{
+            // true | false
+            return index > min && index < max;
+    })
+    return newArray
+}
+
+const movies = ['Cinema Paradiso', ' Gladiator', 'Titanic', 'Rocky', ' Psycho ', 'Vertigo', ' Pulp Fiction', 'Boyhood'];
+const risultato = getRangeOfValues(movies, 2, 5);
+console.log(risultato);
+
+*/
