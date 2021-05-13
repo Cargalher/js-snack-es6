@@ -108,91 +108,116 @@ Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli su
 Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 */
 
-// let soccerTeam = [
+let soccerTeam = [
     
-//     {
-//         teamName: 'Malaga C.F.' ,
-//         points: 0,
-//         fails: 0,
-//     },
+    {
+        teamName: 'Malaga C.F.' ,
+        points: 0,
+        fails: 0,
+    },
 
-//     {
-//         teamName: 'Real Madrid C.F.' ,
-//         points: 0,
-//         fails: 0,
-//     },
+    {
+        teamName: 'Real Madrid C.F.' ,
+        points: 0,
+        fails: 0,
+    },
 
-//     {
-//         teamName: 'Barcelona C.F.' ,
-//         points: 0,
-//         fails: 0,
-//     },
+    {
+        teamName: 'Barcelona C.F.' ,
+        points: 0,
+        fails: 0,
+    },
 
-//     {
-//         teamName: 'Inter di Milano' ,
-//         points: 0,
-//         fails: 0,
-//     },
+    {
+        teamName: 'Inter di Milano' ,
+        points: 0,
+        fails: 0,
+    },
 
-//     {
-//         teamName: 'Arsenal' ,
-//         points: 0,
-//         fails: 0,
-//     },
-// ]
-//     console.log(soccerTeam);
-
-// // ES6
-
-// // const [Malaga,Madrid,Barcelona,Inter,Arsenal] = soccerTeam;
-// // console.log(Malaga);
+    {
+        teamName: 'Arsenal' ,
+        points: 0,
+        fails: 0,
+    },
+]
+    console.log(soccerTeam);
 
 
 
 
+// get random number and push it inside of the points property and fails property
+/*
+for(let i=0; i< soccerTeam.length;i++){
 
+    soccerTeam[i].points = Math.floor(Math.random() * 21);
+    console.log(soccerTeam[i].points);
+    soccerTeam[i].fails = Math.floor(Math.random() * 21);
+    console.log(soccerTeam[i].fails);
 
-
-
-
-
-
-
-
-// // get random number and push it inside of the points property and fails property
-// for(let i=0; i< soccerTeam.length;i++){
-
-//     soccerTeam[i].points = Math.floor(Math.random() * 21);
-//     console.log(soccerTeam[i].points);
-//     soccerTeam[i].fails = Math.floor(Math.random() * 21);
-//     console.log(soccerTeam[i].fails);
-
-// }
+}
    
-// console.log(soccerTeam);
+console.log(soccerTeam);
 
 
-// // new array created to insert team Name and fails
-// let soccerTeam2 = []
+// new array created to insert team Name and fails
+let soccerTeam2 = []
 
-// for(let i=0; i< soccerTeam.length;i++){
+for(let i=0; i< soccerTeam.length;i++){
 
-//     soccerTeam2.push({
-//             teamName: soccerTeam[i].teamName,
-//             fail: soccerTeam[i].fails,
-//         })
+    soccerTeam2.push({
+            teamName: soccerTeam[i].teamName,
+            fail: soccerTeam[i].fails,
+        })
         
     
-// }
-// console.log(soccerTeam2);
+}
+console.log(soccerTeam2);
  
-// // let [teamName, fails] = soccerTeam2;
-// // console.log(teamName);
-// // console.log(fails);
+// let [teamName, fails] = soccerTeam2;
+// console.log(teamName);
+// console.log(fails);
 
 
-// let [{teamName,fails}] = soccerTeam2;
-// console.log(teamName,fails);
+let [{teamName,fails}] = soccerTeam2;
+console.log(teamName,fails);*/
+
+/*
+// fabio's way
+function generateRandomNumbers(min, max){
+    return Math.ceil(Math.random() * (max - min)) +min;
+}
+
+// Map---> nuova array
+
+soccerTeam = soccerTeam.map( (team) =>{
+    team.points = generateRandomNumbers(1, 10);
+    team.fails = generateRandomNumbers (1, 5);
+    return team;
+})
+
+console.log(soccerTeam);
+
+// destructurazione
+
+const teams = [];
+
+soccerTeam.forEach(team => {
+    const {teamName, fails}= team;
+    teams.push(
+        {teamName,fails}
+        );
+});
+
+console.log(teams);
+
+*/
+
+
+
+
+
+
+
 
 // Snack 3:
 
@@ -200,7 +225,7 @@ Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengo
 La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.*/
 
 
-
+/*
 
     const movies = ['Cinema Paradiso', ' Gladiator', 'Titanic', 'Rocky', ' Psycho ', 'Vertigo', ' Pulp Fiction', 'Boyhood']
     const min = 1
@@ -221,4 +246,4 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
      console.log(newArray);
    
 
-     
+     */
